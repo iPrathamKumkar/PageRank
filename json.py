@@ -18,7 +18,7 @@ fhand = open('spider.js', 'w')
 nodes = list()
 maxrank = None
 minrank = None
-for row in cur :
+for row in cur:
     nodes.append(row)
     rank = row[2]
     if maxrank is None or maxrank < rank:
@@ -36,7 +36,7 @@ fhand.write('spiderJson = {"nodes":[\n')
 count = 0
 map = dict()
 ranks = dict()
-for row in nodes :
+for row in nodes:
     if count > 0:
         fhand.write(',\n')
     rank = row[2]
@@ -52,13 +52,14 @@ cur.execute('SELECT DISTINCT from_id, to_id FROM Links')
 fhand.write('"links":[\n')
 
 count = 0
-for row in cur :
+for row in cur:
     # print row
-    if row[0] not in map or row[1] not in map : continue
+    if row[0] not in map or row[1] not in map:
+        continue
     if count > 0:
         fhand.write(',\n')
     rank = ranks[row[0]]
-    srank = 19 * ( (rank - minrank) / (maxrank - minrank) )
+    srank = 19 * ((rank - minrank) / (maxrank - minrank))
     fhand.write('{"source":' + str(map[row[0]]) + ', "target":' + str(map[row[1]]) + ', "value":3}')
     count = count + 1
 fhand.write(']};')

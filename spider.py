@@ -90,7 +90,7 @@ while True:
         document = urlopen(url, context=ctx)
         html = document.read()
         if document.getcode() != 200:
-            print("Error on page: ",document.getcode())
+            print("Error on page: ", document.getcode())
             cur.execute('UPDATE Pages SET error = ? WHERE url = ?', (document.getcode(), url))
 
         if 'text/html' != document.info().get_content_type():
