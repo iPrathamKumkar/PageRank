@@ -1,6 +1,6 @@
 # PageRank
 
-A simple Python Search Spider, Page Ranker, and Visualizer
+A simple Search Spider, Page Ranker, and Visualizer using Python
 
 ### Prerequisites
 
