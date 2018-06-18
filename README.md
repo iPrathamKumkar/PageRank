@@ -163,4 +163,4 @@ If you re-run the other utilities and then re-run json.py, you merely have to pr
 
 ## Acknowledgments
 
-* Special thanks to Mr. Charles Severance Mr. Michael Bostock!
+* Special thanks to Mr. Charles Severance and Mr. Michael Bostock!
