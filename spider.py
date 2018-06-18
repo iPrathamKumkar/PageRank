@@ -136,7 +136,7 @@ while True:
             href = href[:-1]
         if len(href) < 1:
             continue
-		# Check if the URL is in any of the webs
+        # Check if the URL is in any of the webs
         found = False
         for web in webs:
             if (href.startswith(web)):
