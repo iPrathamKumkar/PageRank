@@ -157,10 +157,10 @@ http://mbostock.github.com/d3/
 
 If you re-run the other utilities and then re-run json.py, you merely have to press refresh in the browser to get the new data from **spider.js**.
 
-## Authors
+## Author
 
 * **Prathamesh Kumkar** - [iPrathamKumkar](https://github.com/iPrathamKumkar)
 
-## Acknowledgments
+## Acknowledgment
 
 * Special thanks to Mr. Charles Severance and Mr. Michael Bostock!
